@@ -1,6 +1,6 @@
 ## Personal Portfolio
 
-### [Live Site](https://jsmasterypro.com)
+### [Live Site](https://mohammad-sd.netlify.app/)
 
 ![Portfolio Website](https://pasteboard.co/KbTGw8F.png)
 
