@@ -5,6 +5,8 @@ export const Img = styled.img`
   height: 100%;
   object-fit: cover;
   overflow: hidden;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 `;
 
 export const GridContainer = styled.section`
@@ -84,14 +86,15 @@ export const UtilityList = styled.ul`
 `;
 
 export const ExternalLinks = styled.a`
-  color: #d4c0c0;
-  font-size: 1.6rem;
+  color: white;
+  font-size: 1.8rem;
   padding: 1rem 1.5rem;
-  background: #6b3030;
+  background: #2952a3;
   border-radius: 15px;
   transition: 0.5s;
   &:hover {
-    background: #801414;
+    background: white;
+    color: #0f1624;
   }
 `;
 
@@ -101,6 +104,5 @@ export const TagList = styled.ul`
   padding: 2rem;
 `;
 export const Tag = styled.li`
-  color: #d8bfbf;
   font-size: 1.5rem;
 `;
