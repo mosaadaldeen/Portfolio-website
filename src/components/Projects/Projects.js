@@ -12,7 +12,6 @@ import {
   TitleContent,
   UtilityList,
   Img,
-  TitleContentStack,
 } from "./ProjectsStyles";
 import {
   Section,
@@ -22,8 +21,10 @@ import {
 import { projects } from "../../constants/constants";
 
 const Projects = () => (
-  <Section nopadding id="projects">
-    <SectionDivider divider />
+  <Section id="projects">
+    <br />
+    <br />
+    <SectionDivider />
     <SectionTitle main>Projects</SectionTitle>
     <GridContainer>
       {projects.map((p, i) => {
@@ -36,8 +37,7 @@ const Projects = () => (
             </TitleContent>
             <CardInfo className="card-info">{p.description}</CardInfo>
             <div>
-              <Hr />
-              <TitleContent>Stack:</TitleContent>
+              <TitleContent>Stack</TitleContent>
               <TagList>
                 {p.tags.map((t, i) => {
                   return <Tag key={i}>{t}</Tag>;
@@ -45,12 +45,8 @@ const Projects = () => (
               </TagList>
             </div>
             <UtilityList>
-              <ExternalLinks target="_blank" href={p.visit}>
-                Visit
-              </ExternalLinks>
-              <ExternalLinks target="_blank" href={p.source}>
-                Code
-              </ExternalLinks>
+              <ExternalLinks href={p.visit}>Code</ExternalLinks>
+              <ExternalLinks href={p.source}>Source</ExternalLinks>
             </UtilityList>
           </BlogCard>
         );
